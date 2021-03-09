@@ -1,0 +1,187 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(104, 176, 204);
+}
+
+.signup{
+  width: 25%;
+  margin: 20px auto 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.signup h1{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.signup p{
+  text-align: right;
+}
+
+.signup form{
+  display: flex;
+  flex-direction: column;
+}
+
+.signup form input{
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.signup form input[type="submit"]{
+  background-color: rgb(64, 64, 143);
+  color: white;
+  font: 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container{
+  width: 25%;
+  background-color: white;
+  margin: 20px auto 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header{
+  width: 100%;
+  background-color: purple;
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header h3{
+  color: white;
+}
+
+.header button{
+  margin-left: auto;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(230, 62, 112);
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.body{
+  height: 450px;
+  padding: 20px 10px;
+  overflow-y: scroll;
+  background-color: rgb(236, 235, 141);
+}
+
+.task{
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.task-head{
+  background-color: skyblue;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.task-body{
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.modal-open{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.modal-head{
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.modal-body form{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-body input , .modal-body textarea , .modal-body button{
+  margin-bottom: 10px;
+  height: 40px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.modal-body button{
+  background-color: rgb(52, 52, 189);
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1168px){
+
+  .container , .signup , .login{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+@media screen and (max-width: 968px){
+
+  .container , .signup , .login{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+
+  .container , .signup , .login{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+@media screen and (max-width: 568px){
+
+  .container , .signup , .login{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+
+
