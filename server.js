@@ -15,7 +15,7 @@ app.use(cookieParser())
 
 
 //MongoDB Connection
-mongoose.connect('mongodb://localhost/todomern', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+mongoose.connect('mongodb+srv://admin:admin123@cluster0.kemen.mongodb.net/myFirstDatabase?retryWrites=true&w=majority/todomern', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
     .then(() => {
         console.log("Database Connection Successfull");
     })
